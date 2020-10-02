@@ -1,0 +1,9 @@
+
+"mySimpleConfig" : {
+   "Type" : "AWS::AutoScaling::LaunchConfiguration",
+   "Properties" : {
+      "ImageId" : "ami-02354e95b39ca8dec",
+      "SecurityGroups" : [ { "Ref" : "logicalName" }, "myExistingEC2SecurityGroup" ],
+      "InstanceType" : "t3.micro"
+   }
+}
